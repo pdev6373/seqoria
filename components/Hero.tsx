@@ -16,7 +16,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}
           >
-            Hello, I'm Genie.
+            {`Hello, I'm Genie.`}
           </motion.h1>
           <motion.h2
             className="text-3xl md:text-4xl font-bold text-blue-600 mb-6"
@@ -32,8 +32,8 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.5 }}
           >
-            I'm here to simplify your life. From managing your schedule to
-            planning your travel, I've got you covered 24/7.
+            {`I'm here to simplify your life. From managing your schedule to
+            planning your travel, I've got you covered 24/7.`}
           </motion.p>
           <motion.div
             className="flex space-x-4"

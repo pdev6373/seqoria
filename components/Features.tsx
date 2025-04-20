@@ -5,7 +5,7 @@ import { Calendar, Plane, Heart } from 'lucide-react';
 export default function Features() {
   const featuresVariant = {
     hidden: { opacity: 0 },
-    visible: (i: any) => ({
+    visible: (i: number) => ({
       opacity: 1,
       transition: {
         delay: 0.3 * i,
@@ -51,8 +51,8 @@ export default function Features() {
             How I Can Help You
           </h2>
           <p className="text-gray-600 text-center text-lg mb-8 md:mb-12 max-w-3xl mx-auto">
-            I'm your all-in-one assistant, ready to handle all aspects of your
-            personal and professional life.
+            {`I'm your all-in-one assistant, ready to handle all aspects of your
+            personal and professional life.`}
           </p>
         </motion.div>
 
