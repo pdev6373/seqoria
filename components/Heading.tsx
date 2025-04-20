@@ -88,7 +88,7 @@ export default function Heading() {
           >
             <div className="relative w-6 h-5">
               <motion.span
-                className="absolute h-0.5 w-6 bg-black rounded-lg"
+                className="absolute right-0 h-0.5 w-6 bg-black rounded-lg"
                 animate={{
                   top: isOpen ? '10px' : '0px',
                   rotate: isOpen ? '45deg' : '0deg',
@@ -96,14 +96,14 @@ export default function Heading() {
                 transition={{ duration: 0.2 }}
               ></motion.span>
               <motion.span
-                className="absolute h-0.5 w-6 bg-black rounded-lg top-2"
+                className="absolute right-0 h-0.5 w-6 bg-black rounded-lg top-2"
                 animate={{
                   opacity: isOpen ? 0 : 1,
                 }}
                 transition={{ duration: 0.2 }}
               ></motion.span>
               <motion.span
-                className="absolute h-0.5 w-6 bg-black rounded-lg top-4"
+                className="absolute right-0 h-0.5 w-6 bg-black rounded-lg top-4"
                 animate={{
                   top: isOpen ? '10px' : '16px',
                   rotate: isOpen ? '-45deg' : '0deg',
