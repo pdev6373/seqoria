@@ -18,7 +18,7 @@ export default function Heading() {
 
   return (
     <motion.header
-      className={`fixed w-full top-0 z-50 ${scrolled ? 'shadow-md' : ''}`}
+      className={`fixed w-full top-0 z-50 shadow-sm`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: 'spring', stiffness: 100, damping: 20 }}
@@ -119,7 +119,7 @@ export default function Heading() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="md:hidden w-full bg-white shadow-lg"
+            className="md:hidden w-full bg-white shadow-sm"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
